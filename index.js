@@ -1,6 +1,6 @@
 var express = require('express');
 var formidable = require('formidable');
-const port = process.env.PORT || 8083;
+const port = process.env.PORT || 80;
 
 
 var app = express();
@@ -23,7 +23,7 @@ app.post('/', function (req, res){
         console.log('Uploaded ' + file.name);
     });
 
-    res.sendFile(__dirname + '/public/index.html');
+    res.sendFile(__dirname + '/public/index2.html');
 });
 
 app.listen(port, ()=>{
